@@ -1,0 +1,3 @@
+
+ var list = [23,44,22,11,"akash",true,undefined];
+ console.log(list.length);

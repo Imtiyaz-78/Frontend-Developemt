@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hoisting</title>
+  </head>
+  <body>
+    <h1>Hoisting Concept</h1>
+    <p>
+      Hoisting is a phenomena in javaScript by which we can acces these variable
+      and Function before even initilization.
+    </p>
+
+    <script>
+      hoisting();
+      console.log(x);
+      var x = 10;
+
+      function hoisting() {
+        console.log("This is Hositing");
+      }
+      hoisting();
+
+      
+    </script>
+  </body>
+</html>
+
+<!-- window is global object which is created along with the global execution context -->

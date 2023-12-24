@@ -1,0 +1,70 @@
+
+==> CSS Fonts Property
+  1. font-faimly
+  2. font-style = italic, oblique, underline
+  3. font-variant
+  4. font-weight(100 to 900)
+  5. font-size (1rem == 16px)
+
+
+==> CSS Text Property:
+    1. color
+    2. Letter-spacing
+    3. word-spacing
+    4. direction = direction: ltf(left to right)
+    5. text-indent:10px --> paragraph ke first line ke pahle space dene ke liye
+    6. text-align
+    6. text-transform: (uppercase, lowercase)
+
+
+==> CSS Link Property:
+    1. :link  (signifies unvisited hyperlinks)
+    2. :visited (signifies link visited)
+    3. :hover
+    4. :active (signifies an element on which the user is currently clicking mouse hataya nhi)
+
+
+
+==> CSS Border Property:
+    1. boder-color: black
+    2. border-style: solid, dotted, dashed, 
+    3. border-width: 5px
+
+
+==> CSS List Property:
+   1. ul (list-style-type: square, dotted,)
+   2. ol (list-style-type: lower-alpha, upper-alpha, lower-roman, upper-alpha, lower-greek) 
+
+
+
+==> CSS Box Model Property:
+    1. Content: The Content of the box, where text and images appear
+    2. Padding: Clears an area around the Content.
+    3. Border:  A border the around the Padding and Content
+    4. Margin:  Clears an area aoutside the border
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+

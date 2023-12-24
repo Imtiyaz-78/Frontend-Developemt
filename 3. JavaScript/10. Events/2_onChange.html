@@ -1,0 +1,83 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            FullName:<input type="text"  name="fullName" onchange="onChangeHandler(event)"/>
+            <br/>
+            <br/>
+            lastName:<input type="text" name="lastName" onchange="onChangeHandler(event)"/>
+            <br/>
+            <br/>
+            <button>Submit</button>
+        </form>
+
+        <table>
+            <tr>
+                <td>
+                    FullName:
+                </td>
+                <td id="full"> </td>
+            </tr>
+
+            <tr>
+                <td>
+                   LastName:
+                </td>
+                <td id="last">
+
+                </td>
+            </tr>
+
+        </table>
+        
+        <script>
+            function onChangeHandler(event){
+                console.log(event);
+                console.log(event.target.name);
+                console.log(event.target.value);
+
+                if(event.target.name == "fullName"){
+                    var list = document.getElementById("full");
+                    list.innerHTML = event.target.value;
+                }
+                
+                else if(event.target.name == "lastName"){
+                    var listLast = document.getElementById("last");
+                    listLast.innerHTML = event.target.value;
+                }
+            }
+        </script>
+    </body>
+</html>
+
+<!-- 
+2nd method
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Select a new car from the list.</p>
+
+<select id="mySelect" onchange="myFunction()">
+  <option value="Audi">Audi</option>
+  <option value="BMW">BMW</option>
+  <option value="Mercedes">Mercedes</option>
+  <option value="Volvo">Volvo</option>
+</select>
+
+<p>When you select a new car, a function is triggered which outputs the value of the selected car.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+</script>
+
+</body>
+</html> -->

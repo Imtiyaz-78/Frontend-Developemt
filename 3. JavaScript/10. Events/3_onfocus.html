@@ -1,0 +1,38 @@
+
+<!-- 
+ Definition and Usage
+
+   1. The onfocus event occurs when an element gets focus.
+
+   2. The onfocus event is most often used with <input>, <select>, and <a>.
+
+   3. Tip: The onfocus event is the opposite of the onblur event. 
+-->
+
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+            <form>
+                fullName:<input type="text" id="fullName" onblur="onblurHandler(event)" onfocus="onfocusHandler(event)"/>
+                <br/>
+                <br/>
+                <button>Submit</button>
+            </form>
+            
+            <script>
+                function onfocusHandler(event){
+                     var list = document.getElementById(event.target.id);
+                     list.style.backgroundColor = "yellow";
+                }
+                function onblurHandler(event){
+                    var list = document.getElementById(event.target.id);
+                     list.style.backgroundColor = "aqua";
+                }
+            </script>
+      
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>First Class Function</title>
+  </head>
+  <body>
+    <script>
+            //   // 1 -----> Function Statement
+            //   function First() {
+            //     console.log("Function Statement"); // This is all Statemnet are Called     Function Statement
+            //   }
+            //   First();
+
+
+
+            //   // 2 -----> Function Expression
+            //   var Expression = function second() {
+            //     console.log("Function Express");
+            //   };
+            //   Expression();
+
+
+            
+
+            //    // 3 -----> Function Declaration
+            //    function Third() {
+            //     console.log("Function Statement"); //Function Statement are also Known as Function Decalaration
+            //   }
+            //   Third();
+
+
+          //   //   4 ------> Anonymous Function
+          //   // Anonymous Function is a function that does not have any name associated with it.
+          //   var anonymous = function () {
+          //     console.log("Anonymous Function");
+          //   };
+          //   anonymous();
+
+
+
+          //   // 5 ----> Named Function Expression
+          //   var NFE = function xyz() {
+          //     console.log("Named Function Expression ");
+          //   };
+          //   NFE();
+          //   // xyz() if we call this then he gives Error --> ReferenceError xyz is not defined
+
+
+
+          //   // 6 -----> Difference between Parameters and Argumnets
+          //   function PA(param1, param2) {
+          //     console.log("parameters and Argumnets");
+          //   }
+          //   PA(1, 2);
+
+
+
+            // <----------- Firts Class Function ---------->
+            // 1. First-class functions are functions that are treated like any other variables
+            // 2. A function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable.
+
+            var first  = function(){
+              console.log("First Class Function");
+            }
+            first(); // // Invoke it using the variable
+
+
+
+    // Passing a function as an argument
+      function sayHello() {
+        return "Hello, ";
+      }
+      function test(helloMessage, name) {
+        console.log(helloMessage() + name);
+      }
+      // Pass `sayHello` as an argument to `test` function
+      test(sayHello, "JavaScript!");
+      // Hello, JavaScript!
+    </script>
+  </body>
+</html>
+
+
+
+

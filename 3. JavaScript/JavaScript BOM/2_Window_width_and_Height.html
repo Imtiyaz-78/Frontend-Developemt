@@ -1,0 +1,24 @@
+<html>
+  <head> </head>
+  <body>
+    <div id="demo"></div>
+  </body>
+
+  <script>
+    console.log(window.innerWidth);
+    console.log(window.innerHeight);
+    let result = document.getElementById("demo");
+
+    if (window.innerHeight >200) {
+      result.style.backgroundColor = "red";
+      result.style.width = "400px";
+      result.style.height = "400px";
+    } 
+    
+    else {
+      result.style.backgroundColor = "blue";
+      result.style.width = "200px";
+      result.style.height = "100px";
+    }
+  </script>
+</html>

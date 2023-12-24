@@ -1,0 +1,66 @@
+<!-- 
+Definition and Usage
+   1. The onselect event occurs after some text has been selected in an element.
+   2. The onselect event is mostly used on <input type="text"> or <textarea> elements.
+    
+-->
+
+<html>
+  <head>
+    <title>onselect</title>
+  </head>
+  <body>
+    <form>
+      fullName:<input
+        type="text"
+        id="fullName"
+        onselect="onSelectHandler(event)"
+        onblur="onblurHandler(event)"
+        onfocus="onfocusHandler(event)"
+      />
+
+      <br />
+      <br />
+      lastName:<input
+        type="text"
+        id="lastName"
+        onselect="onSelectHandler(event)"
+        onblur="onblurHandler(event)"
+        onfocus="onfocusHandler(event)"
+      />
+      <br />
+      <br />
+      <button>Submit</button>
+    </form>
+
+    <script>
+      function onSelectHandler(event) {
+        var list = document.getElementById(event.target.id);
+        list.style.backgroundColor = "grey";
+      }
+      function onfocusHandler(event) {
+        var list = document.getElementById(event.target.id);
+        list.style.border = "7px solid green";
+      }
+      function onblurHandler(event) {
+        var list = document.getElementById(event.target.id);
+        list.style.border = "1px solid black";
+      }
+    </script>
+  </body>
+</html>
+<!-- 
+// or
+<!DOCTYPE html>
+<html>
+  <body>
+    Select some of the text:
+    <input type="text" value="Hello world!" onselect="myFunction()" />
+
+    <script>
+      function myFunction() {
+        alert("You selected some text!");
+      }
+    </script>
+  </body>
+</html> -->

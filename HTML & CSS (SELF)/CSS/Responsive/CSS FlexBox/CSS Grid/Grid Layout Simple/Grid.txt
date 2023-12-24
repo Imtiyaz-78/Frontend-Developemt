@@ -1,0 +1,23 @@
+
+
+ -------> Container 
+ horizontaly center kartey hai toh --> justify use kartey hai
+ Vertically center kartey hai toh --> align use kartey hai
+
+container mein{
+    align-item : center 
+    or place-item: center
+}
+
+------> item or div ko individual center karna hai toh
+ 
+ div or item1{
+    justify-self: center;
+    align-self: center;
+    or single line se --> place-item: center
+ }
+ 
+   
+
+
+

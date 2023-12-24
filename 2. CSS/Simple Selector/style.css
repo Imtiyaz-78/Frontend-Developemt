@@ -1,0 +1,20 @@
+/* Class Selector */
+/* .div1{
+    color: magenta;
+} */
+
+
+/* Id Selector */
+#div1{
+    color: blue !important;
+}
+
+/* Tag Name Selecctor */
+div{
+    color: red;
+}
+
+/* Universal Selector (*) */
+*{
+    color: yellow !important;
+}

@@ -1,0 +1,41 @@
+/* Decendent Selector  */
+/* .dadaji p{
+    background-color: red;;
+    color: white;
+} */
+
+
+/* .dadaji>p{
+    background-color: purple;
+} */
+
+/* .dadaji>.main1>p{
+    background-color: salmon;
+} */
+
+/* .dadaji>.main1{
+    background-color: magenta;
+}
+
+.dadaji>.main1>p{
+    background-color: teal;
+    color: white;
+} */
+
+/* Immediate or Adjacent Sibling Selector (+) */
+
+/* .dadaji+article+p{
+    color: magenta;
+} */
+
+/* General Sibling Selector (~) */
+/* .dadaji~article,.dadaji~p,.dadaji~span{
+    color: blue;
+} */
+
+.dadaji+article{
+    color: red;
+}
+.dadaji~article{
+    color: blue;
+}

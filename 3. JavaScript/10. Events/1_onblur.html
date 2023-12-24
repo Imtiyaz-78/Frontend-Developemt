@@ -1,0 +1,30 @@
+
+<!-- Definition and Usage
+
+   1. The onblur event occurs when an object loses focus.
+
+   2. The onblur event is most often used with form validation code (e.g. when the user leaves a form field).
+
+   3. Tip: The onblur event is the opposite of the onfocus event. 
+-->
+
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            FullName:<input type="text" onblur="onBlurHandler()"/>
+            <br/>
+            <br/>
+            LastName:<input type="text"/>
+            <button>Submit</button>
+        </form>
+        <script>
+            function onBlurHandler(){
+                alert("handler")
+            }
+        </script>
+    </body>
+</html>

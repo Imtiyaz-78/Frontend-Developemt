@@ -1,0 +1,30 @@
+<!-- 
+Definition and Usage
+The onsubmit event occurs when a form is submitted.
+
+-->
+
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form form action="/action_page.php" onsubmit="onSubmitHandler(event)">
+            <input type="text" id="fullName" name="registerFullName"/>
+            <br/>
+            <br/>
+            <input type="text" id="lastName" name="registerLastName"/>
+            <br/>
+            <br/>
+            <input type="submit" value="submit">
+        </form>
+
+        <script>
+            function onSubmitHandler(){
+               
+               alert("The form was submitted");
+            }
+        </script>
+    </body>
+</html>

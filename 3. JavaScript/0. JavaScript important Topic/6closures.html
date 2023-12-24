@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Uses of Closures
+      1. Module design Pattern
+      2. Maintaining state in async world
+      3. setTimeOuts
+      4. Iterators -->
+
+    <h1>
+      Closures is a combination of function bundled together with it's Lexical
+      Enviroment or function along with Lexical scope
+    </h1>
+
+    <p>
+      closures is gives we access to another function scope from an inner
+      function
+    </p>
+
+    <script>
+      //   function first() {
+      //     var a = 20;
+      //     return function second() {
+      //       console.log(a);
+      //     };
+      //   }
+
+      //   var z = first();
+      //   console.log(z);
+      //   z();
+
+      function first() { // Example of Closures
+        var a = 20;
+        function second() {
+          console.log(a);
+        }
+
+        second();
+      }
+      first();
+
+    </script>
+  </body>
+</html>

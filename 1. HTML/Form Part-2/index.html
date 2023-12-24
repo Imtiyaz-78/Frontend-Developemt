@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        textarea{
+            resize: none;
+        }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset style="width: 250px">
+        <legend align="center">Registration Form</legend>
+
+        <label for="f-name">
+          Fname
+          <input type="text" id="f-name" /> <br /><br />
+        </label>
+
+        <label for="l-name">
+          Lname
+          <input type="text" id="l-name" /> <br /><br />
+        </label>
+
+        <label for="email">
+          Email
+          <input type="email" id="email" /> <br /><br />
+        </label>
+        <label for="password">
+          Password
+          <input type="password" id="password" /><br /><br />
+        </label>
+
+        <label for="food-nm"> Enter YOP </label>
+        <br />
+        <select name="food-item-name" id="food-nm">
+          <optgroup label="Veg">
+            <option value="Kadhai Paneer">Kadhai Paneer</option>
+            <option value="Rajma Chawal">Rajma Chawal</option>
+            <option value="Kadhi Chawal">Kadhi Chawal</option>
+          </optgroup>
+
+         <optgroup label="Non-veg">
+            <option value="Chicken Biryani">Chicken Biryani</option>
+            <option value="Mutton">Mutton</option>
+            <option value="Fish">Fish</option>
+         </optgroup>
+        </select>
+        <br><br>
+
+        <input type="text" list="state-list" placeholder="Enter your state">
+
+        <datalist id="state-list">
+            <option value="Bihar"></option>
+            <option value="Uttar Pradesh"></option>
+            <option value="Uttarakhand"></option>
+            <option value="Maharashthra"></option>
+            <option value="Madhya Pradesh"></option>
+            <option value="Andhra Pradesh"></option>
+            <option value="Arunachal Pradesh"></option>
+        </datalist>
+
+        <br><br>
+        <textarea cols="30" rows="10" placeholder="Tell me something about Yourself...">
+
+        </textarea>
+
+        <br /><br />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="cancel" />
+      </fieldset>
+    </form>
+  </body>
+</html>

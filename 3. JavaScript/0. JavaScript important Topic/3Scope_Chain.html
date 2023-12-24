@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Scopre Chain and Lexical Enviroment</p>
+
+    <h1>
+      scope means where you can acces a specific variable or function that's
+      called scope
+    </h1>
+
+    <p>Lexical Analysis means Order or herarchi or Squence</p>
+    <p>
+      Lexical Enviroment is created when ever execution context is created ,
+      Local memory and Lexical Enviroment of parent called scope Chain
+    </p>
+
+    <script>
+      //   function a() {
+      //     c();
+
+      //     function c() {
+      //       console.log(b);
+      //     }
+      //   }
+      //   var b = 10;
+      //   a();
+
+      function a() {
+        var b = 10;
+        c();
+
+        function c() {
+          console.log(b);
+        }
+      }
+
+      a();
+      console.log(b); // giving error b is not define
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!-- 
+  Definition and Usage
+  The onreset event occurs when a form is reset. 
+
+-->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form onsubmit="onSubmitHandler(event)" onreset="onResetHandler()">
+            <input type="text" id="fullName" name="registerFullName"/>
+            <br/>
+            <br/>
+            <input type="text" id="lastName" name="registerLastName"/>
+            <br/>
+            <br/>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+        <script>
+            function onSubmitHandler(event){
+        
+                alert("Form is Submit");
+            }
+
+            function onResetHandler(){
+                alert("Are you Sure want to Reset the form?");
+            }
+        </script>
+    </body>
+</html>

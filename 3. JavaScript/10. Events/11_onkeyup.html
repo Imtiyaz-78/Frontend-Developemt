@@ -1,0 +1,26 @@
+
+<!-- Definition and Usage
+    The onkeyup event occurs when the user releases a key (on the keyboard). 
+   -->
+
+   <html>
+    <head>
+        <style>
+            #demo{
+                margin: auto; 
+                display: block;
+            }
+        </style>
+
+    </head>
+    <body>
+        <input type="text" id="demo" onkeyup="onkeyupHandler()"/>
+        <script>
+            function onkeyupHandler(){
+               
+                let x = document.getElementById("demo");
+                x.value = x.value.toUpperCase();
+            }
+        </script>
+    </body>
+</html>

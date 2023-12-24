@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>setTimeOuts and Closures InterView Question</title>
+  </head>
+
+  <body>
+    <h1>
+      setTimeOuts :- The setTimeout() method executes a block of code after the
+      specified time and it takes callback function as a parameter
+    </h1>
+
+    <script>
+      // function first() {
+      //   var i = 1;
+      //   setTimeout(function () {
+      //     console.log(i);
+      //   }, 3000);
+      //   console.log("This is setTimeout");
+      // }
+      // first();
+
+      // // Example 2
+      // function second() {
+      //   for (let i = 1; i <= 5; i++) {
+      //     // var create same copy of i at same memory location
+      //     setTimeout(function () {
+      //       console.log(i);
+      //     }, i * 1000);
+      //   }
+
+      //   console.log("Example of setTimeout");
+      // }
+      // second();
+
+      function Third() {
+        for (var i = 1; i <= 5; i++) {
+          // var create same copy of i at same memory location
+          function close(i) {
+            setTimeout(function () {
+              console.log(i);
+            }, i * 1000);
+          }
+
+          close(i);
+        }
+
+        console.log("Example of setTimeout");
+      }
+      Third();
+
+      
+    </script>
+  </body>
+</html>

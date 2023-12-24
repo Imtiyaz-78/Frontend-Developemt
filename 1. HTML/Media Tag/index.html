@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 3px solid #fff;
+        font-size: 45px;
+      }
+
+      body {
+        width: 100%;
+        height: 100vh;
+        color: white;
+        background-color: black;
+        padding: 20px;
+        display: grid;
+        gap: 10px;
+        grid-template-areas:
+          "header header header"
+          "aside article1 article2"
+          "aside main main"
+          "footer footer footer";
+      }
+      header {
+        grid-area: header;
+        background-color: deeppink;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      aside {
+        grid-area: aside;
+        background-color: deepskyblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .article-1 {
+        grid-area: article1;
+        background-color: salmon;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .article-2 {
+        grid-area: article2;
+        background-color: teal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      main {
+        grid-area: main;
+        background-color: rgb(82, 226, 226);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      footer {
+        grid-area: footer;
+        background-color: darkblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <aside>Aside</aside>
+    <article class="article-1">Article</article>
+    <article class="article-2">Article</article>
+    <main>Main</main>
+    <footer>Footer</footer>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+
+<!-- 
+   Definition and Usage
+    1. The onerror event is triggered if an error occurs while loading an external file (e.g. a document or an image).
+    
+   2. Tip: When used on audio/video media, related events that occurs when there is some kind of disturbance to the media loading process, are: -->
+
+   <html>
+    <head>
+
+    </head>
+    <body>
+      
+      FirstName: <input type="text"/>
+      <img src="donwload.png" onerror="onErrorHandler()">
+      <h1 id="demo"></h1>
+    </body>
+     <script>
+         function onErrorHandler(){
+            alert('The image could not be loaded.');
+             var list = document.getElementById("demo");
+             list.innerHTML = "sorry for incovenience";
+         }
+     </script>
+</html>
