@@ -14,11 +14,22 @@
        full_name <--- snake case 
        full-name <--- kabab case
        FullName  <--- pascal case 
-       
+
+
 ==> let, var & const
     1. var: Variable can be re-declared & updated. A global scope
     2. let: Variable cannot be re-declared but can be updated. A block scope Variable
     3. const: Variable cannot be re-declared or not be upadted. A block scope Variable
+
+
+
+
+
+
+
+
+
+
 
 
 
