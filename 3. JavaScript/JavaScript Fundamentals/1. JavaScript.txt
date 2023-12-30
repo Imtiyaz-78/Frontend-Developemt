@@ -1,0 +1,25 @@
+
+<====================> JavaScript-fundamentals <=========================>
+
+=> Variables:
+   Variables are container to store the data
+
+=> Variable Rules:
+   1. Variable name are case sensitives; "a" & "A" is diffrent.
+   2. Only letters, digits, underscore(_), and $ is allowed (not even space).
+   3. Only a letter, underscore(_), Or $ should be 1st character.
+   4. Reserved words cannot be Variable names.
+
+   Ex: fullName  <--- camel case (This is best and mostly use)
+       full_name <--- snake case 
+       full-name <--- kabab case
+       FullName  <--- pascal case 
+       
+==> let, var & const
+    1. var: Variable can be re-declared & updated. A global scope
+    2. let: Variable cannot be re-declared but can be updated. A block scope Variable
+    3. const: Variable cannot be re-declared or not be upadted. A block scope Variable
+
+
+
+
