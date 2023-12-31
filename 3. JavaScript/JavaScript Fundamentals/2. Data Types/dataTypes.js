@@ -1,5 +1,9 @@
 // <=======> Data Types <========>
-// https://tc39.es/ecma262/  <--- Official Documnetation of JavaScript website 
+// https://262.ecma-international.org/#sec-typeof-operator  <--- Official Documnetation of JavaScript website 
+
+// https://tc39.es/ecma262/#sec-typeof-operator
+
+
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript <--- mdn for developer
 
 "use strict" // treat all JS code as newer JS versions
