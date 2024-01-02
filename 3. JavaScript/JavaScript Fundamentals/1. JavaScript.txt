@@ -22,6 +22,11 @@
     3. const: Variable cannot be re-declared or not be upadted. A block scope Variable
 
 
+==> How memory work in JavaScript:
+   -> There are two type of memory in JavaScript
+   1. Stake memory (All Primitives type data are use Stack memory)
+   2. Heap memory (All Non-Primitives type data are use heap memory)
+
 
 
 

@@ -20,3 +20,31 @@ console.log(undefined === 0); // false
 
 //==> stric check ===
 console.log("4" === 4); // ==> false
+
+
+
+
+//  How memory work in JavaScript:
+// let myName = "imtiyaz";
+// let anotherName = myName;
+// anotherName = "developer";
+
+// console.log(myName);
+// console.log(anotherName);
+
+
+
+
+let userOne = {
+    email: "imtiyaz@google.ocm",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne;
+userTwo.email = "imtiyazwipro@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+

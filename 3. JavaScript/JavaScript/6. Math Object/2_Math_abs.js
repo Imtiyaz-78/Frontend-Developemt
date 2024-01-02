@@ -36,3 +36,6 @@ var result = -4545;
 result = Math.abs(result);
 console.log(result); // output ---> 4545
 
+
+
+

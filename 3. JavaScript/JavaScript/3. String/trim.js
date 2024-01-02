@@ -15,7 +15,7 @@ console.log(resultTwo.length);
 
 // 2.
 var fullName = " salman  g ";
-//it will remove the empty space towards left and towards right
+// It will remove the empty space towards left and towards right
 var result = fullName.length;
 
 console.log(result);
