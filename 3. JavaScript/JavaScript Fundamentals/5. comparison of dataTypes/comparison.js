@@ -24,7 +24,7 @@ console.log("4" === 4); // ==> false
 
 
 
-//  How memory work in JavaScript:
+// How memory work in JavaScript:
 // let myName = "imtiyaz";
 // let anotherName = myName;
 // anotherName = "developer";
@@ -33,10 +33,8 @@ console.log("4" === 4); // ==> false
 // console.log(anotherName);
 
 
-
-
 let userOne = {
-    email: "imtiyaz@google.ocm",
+    email: "imtiyaz@google.comm",
     upi: "user@ybl"
 }
 
