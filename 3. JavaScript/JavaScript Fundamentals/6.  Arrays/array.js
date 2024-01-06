@@ -63,10 +63,11 @@ console.log(array3); // ["a", "b", "c", "d", "e", "f"]
 console.log(array1)  // ['a', 'b', 'c'];
 
 
-// 6. The splice() method of Array changes the contents of an array by removing or replacing existing elements 
-// splice() method of array is to add or remove the element in array.
+// 6. The splice() method of Array changes the contents of an array by 
+//    removing or replacing existing elements 
+//    splice() method of array is to add or remove the element in array.
 
-// systex:
+// syntex:
 
 //7. splice(start_index_number, total_deleCount_number, items1, items2)
 // splice(1, 2, "mago", "apple" )
