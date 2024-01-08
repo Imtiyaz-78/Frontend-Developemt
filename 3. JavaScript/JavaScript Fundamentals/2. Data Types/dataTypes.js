@@ -20,6 +20,7 @@
 // undefined => variable that has no value assigned yet 
 // symbol => unique 
 
+
 /*
 JavaScript has 8 Datatypes
 1. String
@@ -35,9 +36,4 @@ JavaScript has 8 Datatypes
 
 console.log(typeof null); // o/p: object <-- null is a object(Interview)
 console.log(typeof undefined); // o/p: undefined
-
-
-
-
-
 

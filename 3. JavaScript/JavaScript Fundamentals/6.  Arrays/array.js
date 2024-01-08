@@ -2,7 +2,7 @@
 
 // <===================> Array <=======================>
 
-// Array in JS: Array is object
+// Array in JS: Array is a object
 
 // 1. Declaration and Initialization of an array:
 let arr = [10, 20, 30];
@@ -213,28 +213,59 @@ console.log(animals.slice());     // [ 'ant', 'bison', 'camel', 'duck', 'elephan
 // Ex: 
 
 const fillFruits = ["Banana", "Orange", "Apple", "Mango"];
-fillFruits.fill("Kiwi"); 
+fillFruits.fill("Kiwi");
 console.log(fillFruits); // ['Kiwi', 'Kiwi', 'Kiwi', 'Kiwi'] -> sab index par kiwi fill ho gya
 
 
 // Example:
-console.log([1, 2, 3].fill(4)); // [4, 4, 4]
-console.log([1, 2, 3].fill(4, 1)); // [1, 4, 4]
-console.log([1, 2, 3].fill(4, 1, 2)); // [1, 4, 3]
-console.log([1, 2, 3].fill(4, 1, 1)); // [1, 2, 3]
-console.log([1, 2, 3].fill(4, 3, 3)); // [1, 2, 3]
-console.log([1, 2, 3].fill(4, -3, -2)); // [4, 2, 3]
-console.log([1, 2, 3].fill(4, NaN, NaN)); // [1, 2, 3]
-console.log([1, 2, 3].fill(4, 3, 5)); // [1, 2, 3]
-console.log(Array(3).fill(4)); // [4, 4, 4]
+// console.log([1, 2, 3].fill(4)); // [4, 4, 4]
+// console.log([1, 2, 3].fill(4, 1)); // [1, 4, 4]
+// console.log([1, 2, 3].fill(4, 1, 2)); // [1, 4, 3]
+// console.log([1, 2, 3].fill(4, 1, 1)); // [1, 2, 3]
+// console.log([1, 2, 3].fill(4, 3, 3)); // [1, 2, 3]
+// console.log([1, 2, 3].fill(4, -3, -2)); // [4, 2, 3]
+// console.log([1, 2, 3].fill(4, NaN, NaN)); // [1, 2, 3]
+// console.log([1, 2, 3].fill(4, 3, 5)); // [1, 2, 3]
+// console.log(Array(3).fill(4)); // [4, 4, 4]
 
 
 
 
 
 // <==============> Array se kuchh question puchhte hai <==============> 
-
+const arrQ = [10, 40, 10, 30, 100]
 // 1. includes(arg..) check karta hai element present hai ki nhi array
-console.log(array.includes(40)); // o/p --> true, means 40 present hai
+console.log(arrQ.includes(40)); // o/p --> true, means 40 present hai array mein 
+console.log(arrQ.indexOf(30)); // 3 --> value 30 three(3) index par present hai.
+
+const newArr = arrQ.join();
+
+console.log(arrQ);
+console.log(newArr); // 10,40,10,30,100 // ye array ko bind bhi kar diya hai and string mein bhi convert kar diya hai --> type of newArr String
+console.log(typeof newArr);
+
+
+// slice() and splice() method inteview question: (v.v.i)
+// slice() method last index ko include karta hai
+// but splice() method last index ko include karta hai and modified array retun karta hai
+
+const myn1 = [0, 1, 2, 3, 4, 5];
+
+console.log("Original Array A ==>", myn1); // Original Array A ==> [ 0, 1, 2, 3, 4, 5 ]
+console.log(myn1.slice(1, 3)); //
+console.log(myn1); // [ 0, 1, 2, 3, 4, 5 ] (They are not changed in original array)
+
+
+console.log("Original Array B ==>", myn1);   // Original Array B ==> [ 0, 1, 2, 3, 4, 5 ]
+console.log(myn1.splice(1, 3));              // [ 1, 2, 3 ]
+console.log("Original Array changed ", myn1);// Original Array changed  [ 0, 4, 5 ]
+
+
+
+
+
+
+
+
 
 
