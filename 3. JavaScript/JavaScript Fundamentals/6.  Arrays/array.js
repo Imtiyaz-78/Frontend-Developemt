@@ -252,8 +252,8 @@ console.log(typeof newArr);
 const myn1 = [0, 1, 2, 3, 4, 5];
 
 console.log("Original Array A ==>", myn1); // Original Array A ==> [ 0, 1, 2, 3, 4, 5 ]
-console.log(myn1.slice(1, 3)); //
-console.log(myn1); // [ 0, 1, 2, 3, 4, 5 ] (They are not changed in original array)
+console.log(myn1.slice(1, 3)); // [ 1, 2 ]
+console.log(myn1);  // [ 0, 1, 2, 3, 4, 5 ] (They are not changed in original array)
 
 
 console.log("Original Array B ==>", myn1);   // Original Array B ==> [ 0, 1, 2, 3, 4, 5 ]
