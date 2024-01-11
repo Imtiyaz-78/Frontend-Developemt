@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: black; */
+}
+#hero-section{
+    width: 100%;
+    height: 90%;
+    /* background-color: aqua; */    
+    position: relative;
+}
+/* Video starts */
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -2;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 255, 255, 0.359);
+    
+}
+header{
+    width: 100%;
+    height: 100px;
+    /* background-color: #83c1ff; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+}
+
+header .logo{
+    font-size: 55px;
+    color: white;
+    font-weight: 900;
+}
+
+header nav{
+    /* background-color: lightgreen; */
+    display: flex;
+    gap: 80px;
+}
+nav a{
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.container h1{
+    font-size: 70px;
+    width: 53%;
+    /* background-color: magenta; */
+    position: relative;
+    top: 60px;
+    left: 150px;
+    color: white;
+}
+h1 span{
+    color: orange;
+}

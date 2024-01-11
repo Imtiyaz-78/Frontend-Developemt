@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+*{
+    font-family: 'Dancing Script', cursive;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    /* background-color: black; */
+}
+
+div{
+    width: 800px;
+    height: 500px;
+    /* background-color: sandybrown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+
+    /* background-image: url('https://p.imgci.com/db/PICTURES/CMS/343500/343568.jpg'); */
+
+    background-image: linear-gradient(to right,violet,indigo,blue,green,yellow,orange,red);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: transparent;
+    background-clip: text;
+}

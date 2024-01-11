@@ -30,3 +30,8 @@
 ((name) => {
     console.log(`Arrow Function IIFE ${name}`) // arrow Function IIFE IMTIYAZ
 })("IMTIYAZ");
+
+
+
+
+

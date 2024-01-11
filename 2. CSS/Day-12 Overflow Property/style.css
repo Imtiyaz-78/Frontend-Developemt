@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+
+#card{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(155, 224, 253);
+    margin:150px auto;
+    /* border: 3px solid black; */
+    padding: 0 15px 10px;    
+    /* resize: both; */
+    border-radius: 13px 13px 0 0;
+    position: relative;
+    overflow: hidden;
+    
+}
+.profile{
+    width: 130px;
+    height: 130px;
+    background-color: yellowgreen;
+    margin:20px auto 10px;
+    border-radius: 50%;
+    background-image: url('https://akm-img-a-in.tosshub.com/indiatoday/images/story/202310/meanwhile--it-is-also-rumoured-that-virat-kohli-and-anushka-sharma-are-expecting-their-second-child-201645736-16x9_0.jpg?VersionId=ZTS1qzkvHjU8rV61s0Fr0_viGkwlgnPL&size=690:388');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+h2{
+    /* background-color: red; */
+    text-align: center;
+    margin-bottom: 10px;
+}
+p{
+    background-color: rgba(215, 212, 212, 0.429);
+    width: 280px;
+    text-align: justify;
+    position: absolute;
+    bottom: -230px;
+    transition: all 0.8s linear;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+}
+
+
+#card:hover p{
+    bottom: 10px;
+}

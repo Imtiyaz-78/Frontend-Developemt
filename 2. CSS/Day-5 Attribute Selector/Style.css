@@ -1,0 +1,20 @@
+/* div[title="div1"]{
+    background-color: red;
+    color: white;
+} */
+
+/* div[title^="div1"]{
+    background-color: salmon;
+}
+div[title$="flex-2"]{
+    background-color: deeppink;
+} */
+
+
+div[title~="2"]{
+    background-color: deepskyblue;
+}
+div[title*="1"]{
+    background-color: slateblue;
+    color: white;
+}

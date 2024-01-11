@@ -1,0 +1,29 @@
+body{
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* div{
+    text-align: center;
+    text-transform: Uppercase;
+    text-decoration:1px solid underline overline rgb(83, 176, 252);
+    text-underline-offset: 5px;    
+    letter-spacing: 20px;
+    word-spacing: 30px;
+} */
+/* p{
+    background-color:rebeccapurple;
+    text-align: justify;    
+    padding: 30px;
+    text-transform: normal;
+    line-height: 20px;
+} */
+div{
+    font-size: 75px;
+    text-shadow: -80px -70px 7px orange,
+                    80px 70px 7px green;
+}

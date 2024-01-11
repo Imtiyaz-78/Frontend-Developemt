@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #ccc; */
+}
+#parent-card{
+    width: 950px;
+    height: 650px;
+    background-color: antiquewhite;
+    border: 3px solid black;
+    margin: 100px auto;
+    padding: 10px;
+    position: relative;
+}
+.child-card{
+    width: 250px;
+    height: 250px;
+    background-color:magenta;
+    font-size: 55px;
+    color: white;
+    text-align: center;
+    line-height: 220px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+

@@ -1,0 +1,47 @@
+/* div::first-line{
+    color: deepskyblue;
+    font-size: 29px;
+} */
+body{
+    color: white;
+    background-color: black;
+    font-size: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* span{
+    display: inline-block;
+}
+span::first-letter{
+    font-size: 105px;
+    color: red;
+} */
+
+/* ::selection{
+    background-color: deeppink;
+    color: white;
+} */
+
+/* ol>li::marker{
+    content: '❤️ ';
+} */
+
+/* ul li:nth-of-type(odd)::marker{
+    content: '😒 ';
+}
+
+ul li:nth-of-type(even)::marker{
+    content: '✅ ';
+} */
+
+div::before{
+    content: '\f061 ';
+    font-family: "font awesome 6 free ";
+    color: orange;
+}
+
+div::after{
+    content: ' Developers..💐';
+    color:green;
+}

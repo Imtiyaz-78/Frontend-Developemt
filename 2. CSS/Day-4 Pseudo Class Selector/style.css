@@ -1,0 +1,14 @@
+.parent p:first-of-type{
+    background-color: darkblue;
+    color: white;
+}
+
+.parent p:last-of-type{
+    background-color: darkcyan;
+    color: white;
+}
+
+.parent span:nth-of-type(3){
+    background-color: darkorange;
+    /* color: white; */
+}

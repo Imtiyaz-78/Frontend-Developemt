@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#ccc;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card{
+    width: 350px;
+    height: 450px;
+    background-color: salmon;
+    margin: 150px auto 0;
+    border: 3px solid black;
+    padding: 20px; 
+
+    border-top-left-radius: 30px 45px;
+    border-top-right-radius: 30px 45px;
+    border-bottom-right-radius: 30px 45px;
+    border-bottom-left-radius: 30px 45px;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0;
+    color: rgb(0, 153, 255);
+}
+p{
+    font-size: 20px;
+    text-align: justify;
+    background-color: none;
+}
+a{
+    font-size: 18px;
+    background-color: darkblue;
+    color: white;
+    padding:20px 30px;
+    text-decoration: none;
+    border-radius: 18px;
+    display: inline-block;
+    margin: 10px 79px;
+    
+}
+.logo{
+    width: 90px;
+    height: 90px;
+    background-color: aqua;
+    border-radius: 50%;
+    margin: auto;
+    background-image: url('https://images.tv9marathi.com/wp-content/uploads/2023/03/30225106/virushka.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

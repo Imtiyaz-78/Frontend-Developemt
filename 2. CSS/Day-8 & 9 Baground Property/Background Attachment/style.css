@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.section-1{
+    background-image: url('https://www.gla.ac.in/parc2024/assets/img/PremMandir.jpg');
+}
+.section-2{
+    background-image: url('https://uttarakhandtourism.gov.in/sites/default/files/2021-11/Banner_Kedarnath.jpg');
+}
+.section-3{
+    background-image: url('https://masalabox.co.in/wp-content/uploads/2019/09/somnath-temple-1024x768.jpeg');
+}
+.section-4{
+    background-image: url('https://www.holytreetravel.com/india/tour-packages/IMAGE/puri2.jpg');
+}
+.section-5{
+    background-image: url('https://staticimg.amarujala.com/assets/images/2022/04/26/750x506/radharani-temple_1650983643.jpeg');
+}
+.section-6{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4e/Tirumala_090615.jpg');
+}
