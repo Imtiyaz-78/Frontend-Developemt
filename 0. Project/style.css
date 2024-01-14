@@ -10,11 +10,33 @@ body {
 .card_ctn {
     float: left;
     width: 25%;
-    padding: 5px 10px;
+    padding: 7px 8px;
     background-color: #d3d3d3e2;
 }
 
-/* Responsive card */
+.card_img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
+
+p {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    word-spacing: -1px;
+    font-size: 18px;
+
+}
+
+
+
+/* Responsive card for mobile*/
 @media screen and (max-width: 600px) {
     .card_ctn {
         width: 100%;
@@ -24,9 +46,21 @@ body {
 }
 
 
+/* For tablets */
+/* @media screen and (max-width: 768px) {
+    .card_ctn {
+        width: 50%;
+        display: block;
+        margin-bottom: 20px;
+    }
+} */
+
+
+
+
 /* Style the cards */
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(237, 213, 213, 0.8);
     padding: 16px;
     text-align: center;
     background-color: #e85fe8b4;
@@ -36,17 +70,3 @@ body {
     font-size: 16px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
