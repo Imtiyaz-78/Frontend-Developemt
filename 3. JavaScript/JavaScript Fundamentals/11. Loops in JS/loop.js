@@ -1,5 +1,5 @@
 
-// Ctrl+Shift+L
+// Ctrl+Shift+L (multi cursor)
 
 // <===============> Lopps/Iteration <=============>
 
@@ -26,6 +26,20 @@ console.log("<=========>");
 */
 
 
+
+// 2 to 20 ka table 
+for (let i = 1; i <= 20; i++) {
+    // console.log(`Outer loop value: ${i}`);
+    for (let j = 1; j <= 20; j++) {
+        // console.log(i + '*' + j + ' = ' + i * j);
+    }
+
+}
+
+
+
+
+// break keyword
 /*
 const arr = [1, 2, 3, 4, 5, 6, 6, 8, 9, 10];
 
@@ -43,21 +57,55 @@ for (let i = 0; i < arr.length; i++) {
 */
 
 
+
+// continue keyword example:
 const arr = [10, 20, 30, 40, 50, 60, 70]
 
 for (let i = 0; i < arr.length; i++) {
     if (arr[i] == 30) {
         continue;
     }
-    result = arr[i] +
-        // console.log(`Value of array: ${arr[i]}`);
-        console.log(arr[i]);
+    // console.log(`Value of array: ${arr[i]}`);
+    // console.log(arr[i]);
 
 }
 
 
 
-// 2. while loop
+
+
+
+// 2. while loop:
+
+let i = 0;
+let arr3 = [10, 20, 30, 40, 50, 60]
+while (i < arr3.length) {
+    // console.log(`The ${i} value of array is : ${arr3[i]}`);
+    i++;
+}
+
+
+
+// 3. do while loop:
+// 1st Ex:
+
+// In do while loop atleast one time loop will excuted.
+let score = 11;
+do {
+    console.log(`Score is ${score}`);
+    score++;
+} while (score <= 10);
+
+
+
+
+// 2nd Ex:
+let j = 0;
+let arr4 = [10, 20, 30, 40, 50, 60, 70]
+do {
+    console.log(`The ${j} value of array index is : ${arr4[j]}`);
+    j++;
+} while (j < arr4.length);
 
 
 
