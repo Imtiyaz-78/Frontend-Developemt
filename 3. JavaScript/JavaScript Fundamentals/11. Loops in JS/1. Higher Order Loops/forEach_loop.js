@@ -5,6 +5,8 @@
 // forEach loop accept callback function
 // callbackFun --> 1st aesa function jiska koee name nhi hota hai called callback function
 
+// --> Note: forEach loop nothing return (This is a problem) 
+
 
 const coding = ["js", "java", "react", "Cpp", "ruby", "javaScript"]
 
