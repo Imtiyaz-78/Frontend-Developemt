@@ -1,0 +1,171 @@
+
+console.log(document)
+console.dic(document) <-- baki sari information bhi mil jayegi jo chhupi huee thi 
+
+
+console.log(document.baseURI)   <-------- URL of website
+console.log(document.links)     <-------- Kisi bhi website mein total links janne ke liye (ye coll.h) 
+console.log(document.links[2])  <-------- To know the like first, 2nd, 3rd etc. links 
+
+
+==>> To target the DOM Element there are following ways: 
+
+===> GetElement Methods:
+
+1. The getElementById() Method
+   document.getElementById('myheading')    <----- Id based selection
+   document.getElementById('myheading').id  <----- result --> myheading 
+
+
+2. The getElementsByClassName() Method
+   document.getElementsByClassName('heading') <----- class based selection
+
+
+3. The getElementsByTagName() Method        <----- TagName based selection
+   document.getElementsByClassName('h1')
+   document.getElementById('myheading').className  ---> o/p --> heading
+
+
+4. The getElementsByTagNameNS()    
+
+
+
+====> QuerySelector Methods:
+     querySelector() and querySelectorAll() methods are used to select HTML elements in a page based on their tag name, id or class name. 
+
+
+     These methods return an HTML element or a NodeList of elements that match the specified CSS selector.
+
+
+     The querySelector() method returns the first element within the document that matches the specified selectors,
+
+
+
+1. The querySelector() Method:  <---- This use for individual selector
+   document.querySelector('#myId'); // Select only one element with ID myId
+
+2. The querySelectorAll() Method: <---- 
+   document.querySelectorAll('.myClass'); // Select all elements with class myClass
+
+
+
+
+====>> How to select HTML attrinuts:
+       document.getElementById('myheading').getAttribute('id')    ==> o/p --> 'myheading'
+       document.getElementById('myheading').getAttribute('class') ==> o/p -->  'heading'
+
+
+
+====>> How to setAttribute in HTML Tag:
+       document.getElementById('myheading').setAttribute('class', 'test') <----- single classs
+       document.getElementById('myheading').setAttribute('class', 'test heading') <-- mutiple class
+       
+
+
+====>> How apply on HTML Using DOM:
+         const heading = document.getElementById('myheading')
+         heaidng.style.backgroundColor = 'green'
+
+
+
+====>> How change element of HTML Tag by using DOM;
+         const heading = document.getElementById('myheading')
+         heaidng.innerHTML = "<h4> Test </h4>"
+
+
+
+====>> How to change or apply or Style the on HTML element by using DOM:
+        const heading = document.getElementById('myheading')
+        heading.style.color = "blue"
+        heading.style.backgroundColor = "green"   (all css properties we can set)
+
+
+====>> How to get out content from HTML document by using DOM:
+---> There are three ways:
+       const heading = document.getElementById('myheading')
+      
+      1. heading.textContent    <---- it will print only text not including html tag
+         --> o/p: 'JavaScript DOM started'
+       
+      2. heading.innerText       <----- it will print everything including html tags too
+         --> o/p: 'JavaScript DOM started'
+       
+      3. heading.innerHTML
+        --> o/p: 'JavaScript DOM started'
+
+
+===>> above all three ways give same result but actualy what is diffence b/w them.
+
+    --> textContent gives us text as well as hide content between these html tags
+    --> innerText gives us text between these html tags but not include any html attribute
+    --> innerHTML gives us full Html code with all html elements and attributes
+
+
+Ex:
+const heading = document.getElementById('myheading')
+
+    heading.innerText
+      o/p: JavaScript DOM started
+
+    heading.textContent
+      o/p: JavaScript DOM started 'span content added'     '
+
+    heading.innerHTML
+     o/p: JavaScript DOM started <span style="display: none">span content</span>
+
+
+    const re = document.querySelector('input[type = "password"]')
+      o/p: <input type="password" id="password" placeholder="Enter password"> 
+
+
+--> Note--> we can use all css selector for DOM querySelector() methor 
+
+
+===> NodeList(3) <--- ye array jaisa dikhta hai, array hai nhi but array se kafi khubiya milti hai 
+     Ex:
+     const listItems = document.querySelectorAll('li');
+     listItems[0].style.color = "blue"
+     listItems[0].style.backgroundColor = "green"
+  
+
+====> apply styling using dom By loop:
+
+const Heading = document.querySelectorAll('h2')
+
+Heading
+NodeList(3) [h2, h2, h2]
+
+Heading.forEach( function(li) {
+    li.style.color = "white"
+})
+
+
+Heading.forEach( (li) => {
+    li.style.backgroundColor = "red"
+})
+
+
+====>> How to convert NodeList and HTMLCollection into array in DOM:
+       const myList = document.getElementsByClassName('list_item')
+       const liItem = Array.from(myList)   <---- variable name jiss document ko store kiye hai 
+      
+        liItem.forEach(function(item){
+            item.style.color = 'green'
+        })
+
+        // or by arrow
+
+        liItem.forEach((item)=>{
+            item.style.color = 'green';
+            item.style.backgroundColor = "red";
+            item.style.fontSize = "20px";
+        })
+
+====> JavaScript wikipedia DOM:
+        const arr = document.querySelectorAll('.mw-headline')
+            arr.forEach( (h2) => {
+            h2.style.fontSize = "40px";
+            h2.style.color = "white";
+            h2.innerText ="IMTIYAZ"
+
+        })

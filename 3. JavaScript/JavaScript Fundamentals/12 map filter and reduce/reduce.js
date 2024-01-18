@@ -28,15 +28,78 @@ Total sum of value of array: 6
 */
 
 
+// one more another way using arrow function:
+const resultArr = arr.reduce((acc, curr) => acc + curr, 0);
+const resultarr1 = arr.reduce((acc, curr) => {
+    return acc + curr;
+}, 0)
+console.log(`reduce method using arrow fun on single line ==> ${resultArr}`);
+console.log(`reduce method using arrow function ==> ${resultarr1}`);
+
+
+
 let array = [10, 20, 30]
 var result = 0
 // for (let i = 0; i < array.length; i++) {
 //     result = result + array[i]
 
 // }
-let anss = array.forEach((num)=>{
+let anss = array.forEach((num) => {
     result += num
 })
-console.log('The total number is '+result)
+console.log('The total number is ' + result)
 
 // console.log(typeof result, result);
+
+
+
+// Let's see one more example:
+
+const mobileCard = [
+    {
+        brand: "Samsung",
+        model: "Galaxy S21",
+        price: 950,
+        color: "Black",
+    },
+    {
+        brand: "Apple",
+        model: "Iphone 13 Pro Max",
+        price: 1400,
+        color: "Space Gray",
+
+    },
+    {
+        brand: "Huawei",
+        model: "P40 Pro",
+        price: 780,
+        color: "Blue",
+
+    },
+    {
+        brand: "Oppo",
+        model: "Find X2",
+        price: 650,
+        color: "White & Black",
+
+    },
+    {
+        brand: "Vivo",
+        model: "X60 Pro+",
+        price: 8000,
+        color: "Green"
+    }
+]
+
+const cardResult = mobileCard.reduce((acc, items) => acc + items.price, 0);
+console.log(`Total price of Mobile : ₹${cardResult}`); // Total price of Mobile : ₹11780
+
+// other way of array:
+const cardResult1 = mobileCard.reduce((acc, items) => {
+    return acc + items.price;
+}, 0);
+
+console.log(`Rupess ==> ${cardResult1}`); // Rupess ==> 11780
+
+
+
