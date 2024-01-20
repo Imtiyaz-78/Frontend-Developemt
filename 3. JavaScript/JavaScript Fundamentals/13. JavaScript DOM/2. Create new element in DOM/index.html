@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>create a new element in DOM</title>
+  </head>
+  <body style="background-color: hsl(0, 3%, 27%); color: #fff">
+    <div class="parent">
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+    </div>
+
+    <script>
+      const parent = document.querySelector(".parent");
+      //   console.log(parent);
+      //   console.log(parent.children);
+      //   console.log(parent.children[1]);
+      //   console.log(parent.children[1].innerHTML);
+
+      //   for (let i = 0; i < parent.children.length; i++) {
+      //     console.log(parent.children[i].innerHTML);
+      //   }
+
+      parent.children[1].style.color = "yellow";
+      parent.children[1].style.fontSize = "50px";
+      parent.children[1].style.backgroundColor = "dodgerblue";
+      parent.children[1].style.fontWeight = "900";
+
+      //   Target the first child
+    //   console.log(parent.firstElementChild);
+    //   console.log(parent.lastElementChild);
+
+
+      // one more other way to target parent
+      const firstDay = document.querySelector(".day");
+      console.log(firstDay);
+      console.log(firstDay.parentElement);
+      console.log(firstDay.nextElementSibling);
+
+
+      console.log("NODES: ", parent.childNodes);
+    </script>
+  </body>
+</html>

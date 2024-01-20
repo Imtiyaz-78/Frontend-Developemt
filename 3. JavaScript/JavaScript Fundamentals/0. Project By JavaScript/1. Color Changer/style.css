@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffafcc;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    margin-top: 60px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+
+#grey {
+    width: 90px;
+    height: 90px;
+    background-color: grey;
+    border-radius: 16px;
+    margin-left: 10px;
+    border: 2.5px solid blue;
+
+}
+
+#white {
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 16px;
+    margin-left: 10px;
+    border: 2.5px solid blue;
+}
+
+
+#blue {
+    width: 90px;
+    height: 90px;
+    background-color: hsl(240, 95%, 50%);
+    border-radius: 16px;
+    margin-left: 10px;
+    border: 2.5px solid hwb(306 15% 7%);
+}
+
+#yellow {
+    width: 90px;
+    height: 90px;
+    background-color: yellow;
+    border-radius: 16px;
+    margin-left: 10px;
+    border: 2.5px solid rgb(91, 91, 212);
+}
+
+#purple {
+    width: 90px;
+    height: 90px;
+    background-color: purple;
+    border-radius: 16px;
+    margin-left: 10px;
+    border: 2.5px solid blue;
+}
+
+nav>a {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
+}
+
+nav>a {
+
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color, border-color, color, box-shadow, filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 500;
+    text-align: center;
+    padding: 16px 14px 18px;
+    box-shadow: inset 0 0 0 2px #616467;
+    background-color: transparent;
+    height: 48px;
+    color: hsl(132, 9%, 10%);
+    text-decoration: none;
+    margin-left: 10px;
+
+
+
+}
+
+a:hover {
+    background-color: rgba(194, 96, 222, 0.9);
+    color: #fff;
+}

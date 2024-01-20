@@ -169,3 +169,22 @@ Heading.forEach( (li) => {
             h2.innerText ="IMTIYAZ"
 
         })
+-->> NodeList and HTMLCollection
+
+
+
+
+
+
+<================> How to create a new element in DOM <====================>
+
+
+
+
+
+
+
+
+
+
+

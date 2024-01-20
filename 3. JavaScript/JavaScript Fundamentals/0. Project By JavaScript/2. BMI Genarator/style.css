@@ -1,0 +1,70 @@
+body {
+    background-color: hwb(300 42% 6% / 0.726)
+}
+
+fieldset {
+    width: 280px;
+    height: 350px;
+    border: 4px solid hsl(120, 77%, 57%);
+}
+
+
+.conatiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+fieldset {
+    background-color: lightcyan;
+    border-radius: 10px;
+}
+
+#height,
+#weight {
+
+    background-color: #fff;
+    height: 20px;
+    padding: 3px 7px;
+    line-height: normal;
+    border: 2.5px solid hsl(229, 79%, 64%);
+    border-top-color: #949494;
+    border-radius: 9px;
+    box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
+    outline: 0;
+    color: #111;
+    font-size: 13px;
+
+    :focus {
+        border-color: #e77600;
+        box-shadow: 0 0 3px 2px rgb(228 121 17 / 50%);
+    }
+
+}
+
+button {
+    outline: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    background: #FFD814;
+    border: 1px solid #FCD200;
+    font-size: 13px;
+    height: 31px;
+    padding: 0 11px;
+    text-align: center;
+    width: 100%;
+    min-width: 100px;
+    font-weight: 500;
+    color: #0F1111;
+ 
+
+}
+
+button:hover {
+    background: hsl(125, 80%, 67%);
+    border-color: hsl(121, 73%, 72%);
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
