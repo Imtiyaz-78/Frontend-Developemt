@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event in JavaSrit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h2>Amazing Photo</h2>
+      <ul id="images">
+        <li>
+          <img
+            id="coding"
+            src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?cs=srgb&dl=pexels-christina-morillo-1181467.jpg&fm=jpg&_gl=1*1d69p0w*_ga*NjEyMjU1Mjk0LjE3MDU5MTkxNTg.*_ga_8JE65Q40S6*MTcwNTkxOTE1OS4xLjEuMTcwNTkxOTE5My4wLjAuMA.."
+            alt="coding"
+            onclick="alert('Coding photo is clicked')"
+          />
+        </li>
+
+        <li>
+          <img
+            id="travel"
+            src="https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?cs=srgb&dl=pexels-andrei-tanase-1271619.jpg&fm=jpg&_gl=1*s24nk1*_ga*NjEyMjU1Mjk0LjE3MDU5MTkxNTg.*_ga_8JE65Q40S6*MTcwNTkxOTE1OS4xLjEuMTcwNTkxOTU4OC4wLjAuMA.."
+            alt="travelPhoto"
+          />
+        </li>
+        <li>
+          <img
+            id="parrot"
+            src="https://images.pexels.com/photos/1059823/pexels-photo-1059823.jpeg?cs=srgb&dl=pexels-hans-martha-1059823.jpg&fm=jpg&_gl=1*s8dga7*_ga*NjEyMjU1Mjk0LjE3MDU5MTkxNTg.*_ga_8JE65Q40S6*MTcwNTkxOTE1OS4xLjEuMTcwNTkxOTgxMS4wLjAuMA.."
+            alt="parrotPhoto"
+          />
+        </li>
+        <li>
+          <img
+            id="car"
+            src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?cs=srgb&dl=pexels-pixabay-210019.jpg&fm=jpg&_gl=1*u7r49u*_ga*NjEyMjU1Mjk0LjE3MDU5MTkxNTg.*_ga_8JE65Q40S6*MTcwNTkxOTE1OS4xLjEuMTcwNTkyMDAzNS4wLjAuMA.."
+            alt="carPhoto"
+          />
+        </li>
+
+        <li>
+          <a href="https://www.google.com" id="google" target="_blank"
+            >Google</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script>
+      document
+        .querySelector("#images")
+        .addEventListener("click", function (event) {
+          console.log(event.target.tagName);
+          if (event.target.tagName === "IMG") {
+            console.log(event.target.id);
+            let removeImg = event.target.parentNode;
+            removeImg.remove(); // thsi is first way to remove the element
+            // removeImg.parentNode.removeChild(removeImg); // this is difficult way length code
+          }
+        });
+    </script>
+  </body>
+</html>
