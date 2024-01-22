@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#coding {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 25px 0 0 8px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+#travel {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#parrot {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#car {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+body{
+    background-color: #414141;
+    color: aliceblue;
+}
+
+li a{
+    color: aliceblue;
+    font-size: 30px;
+    margin: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2{
+    margin: 25px 0 0 10px;
+}

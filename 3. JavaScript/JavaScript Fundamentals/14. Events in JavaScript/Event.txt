@@ -1,0 +1,58 @@
+
+
+1. way--> onclick event:
+       jab onclick event directly html element par lagata hai toh best approch nhi hota
+       hum logo ko addEventListener use karna chahiye  
+
+       
+       Like document.getElementById('coding').onclick = function(){
+        alert("this is coding photo")
+       }
+
+
+       --> hum logo ko onclick evnt bhi use nhi karna chahiye because iske under
+           utni features nhi avalable nhi hai
+
+       --> hum logo ko modern chij use karna chahiye
+
+
+2. way --> by addEventListener: (best approach)
+           document.getElementById('travel').addEventListener('click', function () {
+              alert("Travel clicked by best approach")
+           }, false)
+   
+
+//attachEvent()
+---> early time mein jab hum logo ke pass internet explorer ki bahut dikkat thi tab hum log 
+     attachEvent() method use karte they
+ 
+    Ex: 
+          document.getElementById('travel').attachEvent('click', function () {
+              alert("Travel clicked by best approach")
+           }, false)
+   
+
+
+// jQuery --> onEventListener()
+              ek time par jQuery ka bahut bhi bhut log fan huwa karte they jasie abhi react ka fan hai
+              toh uss time par onEventListener() name method use kate they 
+
+
+
+
+====> Some event for Home work
+  1. type: keyboard ke type event hote, mouse key type event hote hai
+  2. timeStamp: tiem kaise pata karte karte hai , date kaise pata karte hai 
+  3. preventDefault : Like link par click karte hai to nivagte ho jate hai toh uska 
+                      default behavior ko stop kar sakte hai kiss ka bhi default behavior
+                      rok sakte hai using preventDefault
+  4. target:
+  5. toElement:
+  5. srcElement
+  6. currentTarget
+  7. clientX, clientY, screenX, screenY, 
+  8. altkey, ctrlkey, shiftykey, keyCode(A key ki code kya hai , B key ka code kya hai)
+
+
+===> event propagation
+
