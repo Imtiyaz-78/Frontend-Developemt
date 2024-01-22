@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>async operation in JavaScript</h1>
+    <button id="stop">Stop</button>
+
+    <script>
+      /*
+      setTimeout(function () {
+        console.log("Hi Imtiyaz I'm a callback");
+      }, 2000);
+
+      // other way for use setTimeout:
+      const timer = setTimeout(() => console.log("I'm a callback"), 2000);
+
+      //One One more other way:
+      const SaImtiyaz = function () {
+        console.log("Hi Imtiyaz I'm a callback by another method");
+      };
+      setTimeout(SaImtiyaz, 3000);
+     */
+
+      // chanage the text heading
+      const changeText = function () {
+        const heading = document.querySelector("h1");
+        heading.textContent = "This is updated value";
+        heading.style.backgroundColor = "blue";
+        heading.style.color = "#f1f1f1";
+      };
+
+      const changeMe = setTimeout(changeText, 3000);
+    
+      // clearing Timeout
+      const btn = document.querySelector("#stop")
+        .addEventListener("click", function () {
+          clearTimeout(changeMe);
+          console.log("STOPPED");
+        });
+    </script>
+  </body>
+</html>

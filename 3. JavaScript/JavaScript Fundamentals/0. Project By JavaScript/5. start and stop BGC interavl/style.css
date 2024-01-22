@@ -1,0 +1,26 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: hwb(0 24% 75%);
+}
+
+.container {
+    width: 350px;
+    height: 300px;
+    border: 1px solid black;
+    
+}
+h1{
+    color: white;
+}
