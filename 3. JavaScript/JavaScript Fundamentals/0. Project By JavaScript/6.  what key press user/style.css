@@ -1,0 +1,21 @@
+
+
+
+.project {
+    background-color: #1c1c1c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.color {
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+}
+th, table, tr, td{
+    border: 2px solid lightgray;
+}
