@@ -1,0 +1,17 @@
+
+
+
+Free API:
+1. https://api.github.com/users/Imtiyaz-78 (github and user ka name )
+2. https://randomuser.me/ ( random user api )
+
+===> API formator website:
+1. https://jsonformatter.org/
+
+
+
+<=====================================================> 
+console.log() technically javascript part hai bhi or nhi bhi hai
+
+--> v8 engine: (https://github.com/v8/v8/blob/main/src/d8/)
+    v8 engine pura c++ mein likha huwa hai.
