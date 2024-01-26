@@ -1,0 +1,42 @@
+
+
+// fecth API:
+   1. The Fetch API provides an interface for fetching resources (including across the network).
+   2. For making a request and fetching a resource, use the fetch() method.
+   3. It is a global method in both Window and Worker contexts.
+   4. The global fetch() method starts the process of fetching a resource from the network,
+      returning a promise that is fulfilled once the response is available 
+
+
+
+
+--->>Note--> The Fetch API uses Request and Response objects (and other things involved with network requests),
+             as well as related concepts such as CORS and the HTTP Origin header semantics.
+ 
+--->> The fetch() method is used to fetch a resource.
+
+
+--> By own fecth is an API method which is used to invoked network request.
+--> fetch API ek libarary hai.
+
+
+
+===> How to use the Fetch API:
+    The Fetch API is provided as a high-level function, and in its most basic version, 
+    it takes a URL and produces a promise that resolves to the response:
+
+
+fetch("http://example.com/api/endpoint")
+  .then((response) => {
+    // Do something with response
+  })
+  .catch(function (err) {
+    console.log("Unable to fetch -", err);
+  });
+
+
+===> event loop:
+     Automatic ek event loop hota jo continueosuly check karte rahta hai ki meri task queue 
+     full toh nhi hai and meri call stack khali toh nhi hai   
+
+404 <--- data not found means request karne ke liye permision hi nhi hai 
