@@ -1,0 +1,15 @@
+
+==> What is Prototype:
+    JavaScript have a special property called prototype that is either null or references another obj
+  
+    Prototypes are the mechanism by which JavaScript objects inherit the features from one another.
+
+    JavaScript is a prototype based language, so, whenever we create a function using JavaScript, JavaScript engine adds a prototype property inside a function,
+   
+    Prototype property is basically an object (also known as Prototype object), where we can attach methods and properties in a prototype object, which enables all the other objects to inherit these methods and properties.
+
+
+
+===> Prototype: Additional kuchh hidden function or properties mil rahe hai jab print karte hai toh
+                jab mai object ko print karta hu toh tab object itself kuchh 
+                properties deta hai and that this properties is called prototype.
