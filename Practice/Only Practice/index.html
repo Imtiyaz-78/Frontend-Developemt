@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API request</title>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Api Request by using fetch Method</h1>
+
+    <div id="cnt">
+      <table id="tbl">
+        <tr>
+          <th>Name</th>
+          <th>Username</th>
+          <th>Email</th>
+        </tr>
+  
+        <tr>
+          <td class="td"></td>
+          <td class="td"></td>
+          <td class="td"></td>
+        </tr>
+      </table>`
+    </div>
+
+    <script>
+      const container = document.querySelector('#ctn');
+  
+      let URL = "https://jsonplaceholder.typicode.com/users";
+      let array = [];
+      fetch(URL)
+        .then((respone) => {
+          return respone.json();
+        })
+        .then((data) => {
+          array = data;
+          array.forEach((items, index, arr) => {
+            console.log(arr[index].name);
+          });
+        })
+        .catch((err) => {
+          console.log(`Permision not allow to access APi ${err}`);
+        });
+    </script>
+  </body>
+</html>

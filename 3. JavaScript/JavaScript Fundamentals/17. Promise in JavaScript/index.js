@@ -127,14 +127,13 @@ async function ApiRequest() {
 // ApiRequest();
 
 
-
 // Above code by another way by using then and cath method  
 fetch('https://jsonplaceholder.typicode.com/users')
     .then(function (response) {
         return response.json(); // return a Promise
     }).then(function (data) {
-       console.log(data);
-    }).catch(function(error){
+        console.log(data);
+    }).catch(function (error) {
         console.log("Error: ", error);
     })
 

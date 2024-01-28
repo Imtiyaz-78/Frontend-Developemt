@@ -3,11 +3,12 @@
 
 // <=========> map, reduce and filte <===============>
 
-// 1. filter:
+// 1. filter: The filter method calls the predicate function one time for each element in the array.
 // 1. The filter() array method is an iterative method.
 // 2. JavaScript Array filter() Method is used to create a new array from a given array
 // 3. filter() method accept callbackfun at its parameters.
-// 4. map return true or false value
+
+// filter() method Returns the elements of an array that meet the condition specified in a callback function.
 
 // calbackfun: A function to execute for each element in the array.
 

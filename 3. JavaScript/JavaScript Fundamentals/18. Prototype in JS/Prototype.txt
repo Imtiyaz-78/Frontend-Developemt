@@ -10,6 +10,6 @@
 
 
 
-===> Prototype: Additional kuchh hidden function or properties mil rahe hai jab print karte hai toh
-                jab mai object ko print karta hu toh tab object itself kuchh 
-                properties deta hai and that this properties is called prototype.
+===> Prototype: Additional kuchh hidden function or properties mil rahe hai jab print karte hai
+                toh jab mai object ko print karta hu toh tab object itself kuchh properties deta
+                hai and that this properties is called prototype.

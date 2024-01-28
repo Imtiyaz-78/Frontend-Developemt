@@ -2,7 +2,7 @@
 const insert = document.getElementById('insert')
 
 window.addEventListener('keydown', function (e) {
-    insert.innerHTML = `
+  insert.innerHTML = `
  <div class ='color'>
  <table>
   <tr>
