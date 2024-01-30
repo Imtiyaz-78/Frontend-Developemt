@@ -1,0 +1,5 @@
+
+
+==> What is lexical scope?
+    A closure is the combination of a function which is bundled together (enclosed)with lexical scope
+    A closure gives you access to an outer function's scope from an inner function.
