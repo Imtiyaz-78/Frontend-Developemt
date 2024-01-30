@@ -51,6 +51,55 @@
 When you execute something synchronously, you wait for it to finish before moving on to another task. When you execute something asynchronously, you can move on to another task before it finishes.
 
 
+==> What Does Lexical Mean?
+    Anything related to creating words, expressions, or variables is termed lexical.
+
+
+==> What exactly is Scope?
+    Scope refers to the area where an item (such as a function or variable)
+    is visible and accessible to other code.
+
+    1. Scope means area, space, or region.
+    2. Global scope means global space or a public space.
+    3. Local scope means a local region or a restricted region.
+
+
+
+===> What is Lexical Scope in JavaScript?
+     1. Lexical scope is the ability for a function scope to access variables from the parent scope.
+     2. Lexical scope is the definition area of an expression.
+     3. In other words, an item's lexical scope is the place in which the item got created.
+        Another name for lexical scope is static scope.
+
+     --> Example of Lexical Scope below:
+    
+     var a = 10; // variable a assigned to 10
+
+        var func = function (){ // outermost function
+            var b = 20;
+            console.log("a and b is accessible (outer):", a, b);
+            var innerFunc= function (){ // innermost function
+                var c = 30;
+                console.log("a and b and c is accessible (innner):", a, b, c);
+            }
+            innerFunc();
+            return;
+        }
+        func(); // invoke function func 
+        console.log("only a is accessible (global):", a);
+
+        Output will be :
+        a and b is accessible (outer): 10 20
+        a and b and c is accessible (innner): 10 20 30
+        only a is accessible (global): 10
+
+
+
+==> What is a Scope Chain?
+    A scope chain refers to the unique spaces that exist from the scope 
+    where a variable got called to the global scope.
+    
+     
 
 
 
