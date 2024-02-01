@@ -12,8 +12,10 @@
 
 
 // There are two of declaring of Of object:
-// 1st: Lete ki tarah 
-// 2nd: Constructor ki tarah
+// 1st: const whatsuser = new Object(); // This is singleton object 
+// 2nd: const whatsUser2 = {} // this Non-singleton object
+// 3rd: const user = { name: "mohammad", age: 23, rollNo: 786}
+// 
 
 
 // Object Literals (Literals means how to deaclare objects)

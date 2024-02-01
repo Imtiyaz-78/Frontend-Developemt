@@ -10,7 +10,7 @@ const arr1 = ["dubai", "nepal", "uk",];
 const numArr = [1, 2, 3, 4, 5, 6,];
 
 // arr1.push(numArr);
-console.log(arr1); // [ 'dubai', 'nepal', 'uk', [ 1, 2, 3, 4, 5, 6 ] ]
+// console.log(arr1); // [ 'dubai', 'nepal', 'uk', [ 1, 2, 3, 4, 5, 6 ] ]
 // problem kya huwa uper ki array ke under array aagya hai 
 
 // acces of arr1 
@@ -18,15 +18,15 @@ console.log(arr1); // [ 'dubai', 'nepal', 'uk', [ 1, 2, 3, 4, 5, 6 ] ]
 // console.log(arr1[3][0]); // 1 
 
 
-// console.log(arr1.concat(numArr)); // ['dubai', 'nepal', 'uk', [ 1, 2, 3, 4, 5, 6 ]]
-// push() method and concat() method gives same result
+
+console.log(arr1.concat(numArr)); // ['dubai', 'nepal', 'uk',  1, 2, 3, 4, 5, 6 ]
 
 
 // concat() Combines two or more arrays. 
 // This method returns a new array without modifying any existing arrays.
 const concat_result = arr1.concat(numArr);
 console.log(concat_result);  // [ 'dubai', 'nepal', 'uk', 1, 2, 3, 4, 5, 6 ]
-console.log(arr1); // [ 'dubai', 'nepal', 'uk' ] --> concat() method don't modified in original array 
+console.log(arr1); // [ 'dubai', 'nepal', 'uk' ] <-- concat() method don't modified in original array 
 
 
 // most usable in industry
@@ -50,12 +50,13 @@ console.log((Array.isArray("imtiyaz "))); // return: false
 console.log((Array.from("imtiyaz"))); // [ 'i', 'm', 't', 'i', 'y', 'a', 'z' ]
 console.log((Array.from({ name: "imtiyaz" }))); // they retun empty obj --> interesting
 
-// above Array.from({name:"imtiyaz"}) confuse ho gya kisko convert kru key kor or Value ko
+// above Array.from({name:"imtiyaz"}) confuse ho gya kisko convert kru key or Value ko
 
 
-// more another way to convert into array
+
+
+// More another way to convert into array
 // Ex:
-
 // Returns a new array from a set of elements.
 // A set of elements to include in the new array object.
 const score1 = 400;

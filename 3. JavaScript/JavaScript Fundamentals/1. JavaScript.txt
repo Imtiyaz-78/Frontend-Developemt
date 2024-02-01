@@ -100,12 +100,3 @@ When you execute something synchronously, you wait for it to finish before movin
     where a variable got called to the global scope.
     
      
-
-
-
-
-
-
-
-
-

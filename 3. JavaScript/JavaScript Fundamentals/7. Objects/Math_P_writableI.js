@@ -1,6 +1,6 @@
 
 
-// Math.PI ki value 3.14... hoti hai mujhe use karni hai change like 5 karni hai change hot sakti hai toh kaise nhi ho sakti hai toh kaise
+// Math.PI ki value 3.14... hoti hai mujhe usey karni hai change like 5 karni hai change hot sakti hai toh kaise nhi ho sakti hai toh kaise
 
 
 const descriptor = Object.getOwnPropertyDescriptor(Math, 'PI')
@@ -18,13 +18,13 @@ console.log(descriptor); /* {
 // Math.PI = 5; // aese karne se override nhi huee PI ki value means change nhi huee 
 // console.log(Math.PI);
 
-// getOwnPropertyDescriptor <-- ye property object kuchh hidden chicj ke bare mein batati hai
+// getOwnPropertyDescriptor <-- ye property object kuchh hidden chij ke bare mein batati hai
 
 
 
 
 
-// make own property 
+// Make own property 
 let own = {
     name: "imtiyaz",
     price: 250,

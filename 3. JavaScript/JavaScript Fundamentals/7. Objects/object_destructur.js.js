@@ -24,7 +24,7 @@ const { courseInstructor: instrcutor } = course;
 console.log(instrcutor); // imtiyaz
 
 
-// <==========> API <===========>
+// <=====================> API <=======================>
 // Free api --> https://randomuser.me/
 //  json ko format karne ke liye --> https://jsonformatter.org/
 
