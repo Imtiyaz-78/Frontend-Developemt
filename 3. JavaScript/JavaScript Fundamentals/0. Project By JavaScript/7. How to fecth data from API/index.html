@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API request</title>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Api Request by using fetch Method</h1>
+
+    <div id="cnt">
+      <!-- <table id="tbl">
+        <tr>
+          <th>Name</th>
+          <th>Username</th>
+          <th>Email</th>
+        </tr>
+
+        <tr>
+          <td class="td"></td>
+          <td class="td"></td>
+          <td class="td"></td>
+        </tr>
+      </table> -->
+    </div>
+
+    <script>
+      const container = document.querySelector("#cnt");
+
+      let URL = "https://jsonplaceholder.typicode.com/users";
+      let array = [];
+      fetch(URL)
+        .then((respone) => {
+          return respone.json();
+        })
+        .then((data) => {
+          array = data;
+          container.innerHTML = ` <table id="tbl">
+        <tr>
+          <th>Name</th>
+          <th>Username</th>
+          <th>Email</th>
+        </tr>
+
+        <tr>
+          <td class="td">${array[0].name}</td>
+          <td class="td">${array[0].username}</td>
+          <td class="td">${array[0].email}</td>
+        </tr>
+        <tr>
+          <td class="td">${array[1].name}</td>
+          <td class="td">${array[1].username}</td>
+          <td class="td">${array[1].email}</td>
+        </tr>
+        <tr>
+          <td class="td">${array[2].name}</td>
+          <td class="td">${array[2].username}</td>
+          <td class="td">${array[2].email}</td>
+        </tr>
+        <tr>
+          <td class="td">${array[3].name}</td>
+          <td class="td">${array[3].username}</td>
+          <td class="td">${array[3].email}</td>
+        </tr>
+        <tr>
+          <td class="td">${array[4].name}</td>
+          <td class="td">${array[4].username}</td>
+          <td class="td">${array[4].email}</td>
+        </tr>
+        <tr>
+          <td class="td">${array[5].name}</td>
+          <td class="td">${array[5].username}</td>
+          <td class="td">${array[5].email}</td>
+        </tr>
+        <tr>
+          <td class="td">${array[6].name}</td>
+          <td class="td">${array[6].username}</td>
+          <td class="td">${array[6].email}</td>
+        </tr>
+        <tr>
+          <td class="td">${array[7].name}</td>
+          <td class="td">${array[7].username}</td>
+          <td class="td">${array[7].email}</td>
+        </tr>
+        <tr>
+          <td class="td">${array[8].name}</td>
+          <td class="td">${array[8].username}</td>
+          <td class="td">${array[8].email}</td>
+        </tr>
+      </table>`;
+        })
+        .catch((err) => {
+          console.log(
+            `Permision not allow to access APi or May be Invalid URL ${err}`
+          );
+        });
+    </script>
+  </body>
+</html>

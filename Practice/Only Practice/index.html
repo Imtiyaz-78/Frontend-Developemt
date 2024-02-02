@@ -18,24 +18,24 @@
     <h1>Api Request by using fetch Method</h1>
 
     <div id="cnt">
-      <table id="tbl">
+      <!-- <table id="tbl">
         <tr>
           <th>Name</th>
           <th>Username</th>
           <th>Email</th>
         </tr>
-  
+
         <tr>
           <td class="td"></td>
           <td class="td"></td>
           <td class="td"></td>
         </tr>
-      </table>`
+      </table> -->
     </div>
 
     <script>
-      const container = document.querySelector('#ctn');
-  
+      const container = document.querySelector("#cnt");
+
       let URL = "https://jsonplaceholder.typicode.com/users";
       let array = [];
       fetch(URL)
@@ -44,9 +44,19 @@
         })
         .then((data) => {
           array = data;
-          array.forEach((items, index, arr) => {
-            console.log(arr[index].name);
-          });
+          container.innerHTML = ` <table id="tbl">
+        <tr>
+          <th>Name</th>
+          <th>Username</th>
+          <th>Email</th>
+        </tr>
+
+        <tr>
+          <td class="td">${array[0].name}</td>
+          <td class="td">${array[0].username}</td>
+          <td class="td">${array[0].email}</td>
+        </tr>
+      </table>`;
         })
         .catch((err) => {
           console.log(`Permision not allow to access APi ${err}`);
