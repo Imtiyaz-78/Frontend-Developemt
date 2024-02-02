@@ -1,5 +1,4 @@
 
-
 const name = "Imtiyaz";
 const repoCount = 786;
 
@@ -13,9 +12,9 @@ console.log(`My name is ${name} and my repo count is ${repoCount}`); // called s
 //1. 
 const str = 'Imtiyaz';
 
+
 // 2.
 const strObj = new String('Imtiyaz');
-
 console.log(strObj[0]);
 console.log(strObj.__proto__);
 
@@ -32,9 +31,4 @@ console.log(strObj.__proto__);
 const city = "darbhnaga";
 console.log(city.substring(0, 4));
 console.log(city.slice(-8, 4));
-
-
-
-
-
 

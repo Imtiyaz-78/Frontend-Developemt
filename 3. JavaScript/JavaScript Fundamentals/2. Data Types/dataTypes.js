@@ -31,7 +31,6 @@ JavaScript has 8 Datatypes
 6. Null
 7. Symbol
 8. Object
-
 */
 
 console.log(typeof null); // o/p: object <-- null is a object(Interview)
