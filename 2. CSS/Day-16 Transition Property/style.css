@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+#parent{
+    width: 1050px;
+    height: 600px;
+    border: 3px solid black;
+    background-color: lightblue;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+.child-top{
+    width: 100%;
+    height: 100%;
+    background-color: lightcoral;    
+    transition: all 0.5s ease;
+    transform-origin: center;
+    transform: scale(1,1);
+}
+.child-top img{
+    width: 100%;
+    height: 100%;
+}
+.child-top:hover{
+   transform: scale(1.2,1.2);
+}
+.child-bottom{
+    width: 0;
+    height: 0.5%;
+    background-color: deeppink;
+    transition: all 2s ease;
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+}
+#parent:hover .child-bottom{
+    width: 100%;
+}

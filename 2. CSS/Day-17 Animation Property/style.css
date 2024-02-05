@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#parent{
+    background-color: rgb(148, 194, 194);
+    border: 3px solid black;
+    width: 1050px;
+    height: 550px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* overflow: hidden; */
+}
+.child{
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+    /* transition: width 3s ease-in-out; */
+    animation-name: block;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    /* animation-delay: 1s; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    position: absolute;    
+    
+}
+
+/* Call an Animation */
+
+@keyframes block {
+    from{
+        left: 0%;
+    
+    }
+    to{
+        left: calc(100% - 200px);
+    
+    }
+}

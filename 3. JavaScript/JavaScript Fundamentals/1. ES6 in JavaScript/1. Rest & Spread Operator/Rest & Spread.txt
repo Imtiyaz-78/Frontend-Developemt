@@ -1,0 +1,24 @@
+
+a + can mean addition (numbers) or concatenation (strings).
+same as a tis Rest and Spread operator are behave two different ways.
+
+
+--> Rest & Spread operator are mostly use in array and object.
+
+
+---> Rest Operator:
+     The rest operator a takes leftover pieces and puts them in an array or object.
+     Syntax : ...restValue <--- restValue is the variable name where we want to put our leftovers.
+
+
+---> Spread Operator:
+     And the spread operator takes an array or object and breaks it into pieces.
+     Syntax : ...otherValue <---- otherValue is the variable name which we want to break.
+
+
+
+     
+
+
+  
+  

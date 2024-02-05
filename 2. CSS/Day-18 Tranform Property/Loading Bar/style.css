@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+#parent{
+    width: 250px;
+    height: 250px;
+    border: 7.5px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+    background-image: url('https://pics.craiyon.com/2023-09-11/58e6a43e676d40d88e1c5060540349fd.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.child{
+    width: 106%;
+    position: absolute;
+    height: 106%;
+    top: -3%;
+    left: -3%;
+    border-radius: 50%;
+    border: 7.5px solid red;
+    border-left:7.5px solid transparent ;
+    border-bottom:7.5px solid transparent ;
+    border-right: 7.5px solid transparent;
+    animation: loading 3s ease-in-out normal infinite;
+}
+@keyframes loading {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(720deg);
+    }
+}

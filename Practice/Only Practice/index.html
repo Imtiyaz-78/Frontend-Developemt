@@ -44,17 +44,17 @@
         })
         .then((data) => {
           array = data;
-          container.innerHTML = ` <table id="tbl">
+          container.innerHTML = ` <table id="tbl">       
         <tr>
-          <th>Name</th>
-          <th>Username</th>
-          <th>Email</th>
+          <th>Name</th>       
+          <th>Username</th>       
+          <th>Email</th>       
         </tr>
 
         <tr>
-          <td class="td">${array[0].name}</td>
-          <td class="td">${array[0].username}</td>
-          <td class="td">${array[0].email}</td>
+          <td class="td">${array[0].name}</td>       
+          <td class="td">${array[0].username}</td>       
+          <td class="td">${array[0].email}</td>       
         </tr>
       </table>`;
         })

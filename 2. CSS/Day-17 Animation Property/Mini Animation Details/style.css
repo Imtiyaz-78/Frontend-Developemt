@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#parent{
+    width: 1100px;
+    height: 600px;
+    background-color: lightblue;
+    border: 5px solid black;
+    position: relative;
+    overflow: hidden;    
+    cursor: pointer;
+}
+.child{
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+    animation: block 4s ease alternate infinite;
+    position: absolute;
+}
+
+@keyframes block {
+    0%{
+        left: 0;
+        top: 0;
+        rotate: 0deg;
+    }
+    25%{
+        left: 891px;
+        top: 0;
+        rotate: 360deg;
+    }
+    50%{
+        left: 891px;
+        top: 390px;
+        rotate: 360deg;
+    }
+    75%{
+        left: 0;
+        top: 390px;
+        rotate: -360deg;
+    }
+    100%{
+        left: 0;
+        top: 0;
+        rotate: -360deg;
+    }
+    
+}
+
+#parent:hover .child{
+    animation-play-state: paused;
+}

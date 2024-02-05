@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#parent{
+    width: 180px;
+    height: 170px;
+    /* background-color: #ccc; */
+    position: relative;
+    animation: heart 0.2s ease alternate infinite;
+}
+
+@keyframes heart {
+    from{
+        scale: 1;
+    }
+    to{
+        scale: 1.2;
+    }
+}
+.heart{
+    width: 100px;
+    height: 150px;
+    background-color: red;
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+}
+.hrt-left{
+    rotate: -45deg;
+    left: 20px;
+}
+.hrt-right{
+    rotate: 46.3deg;
+    left: 58px;
+}
