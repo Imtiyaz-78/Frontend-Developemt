@@ -54,12 +54,12 @@ promiseThree.then(function (data) {
 
 
 // <=============================================================>
-// 4th promise example:
-const promiseFour = new Promise(function (success, rejcted) {
+// 4th promise example: This is also best
+const promiseFour = new Promise(function (resolve, rejcted) {
     setTimeout(function () {
         let error = true;
         if (!error) {
-            success({ username: "imtiyaz", password: "123456" });
+            resolve({ username: "imtiyaz", password: "123456" });
         }
         else {
             rejcted('ERROR: somthing went wrong')
