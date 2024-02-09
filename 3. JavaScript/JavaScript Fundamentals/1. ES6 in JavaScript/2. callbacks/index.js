@@ -1,4 +1,15 @@
 
+// callbak function ex:
+let fun1 = function () {
+    console.log("This is function 1");
+}
+
+
+let fun2 = function (fun1) {
+    console.log(fun1(), "This is Function 2");
+}
+
+
 /*
 const datas = [
     { name: "Imtiyaz", age: 20 },
@@ -19,7 +30,7 @@ function getData() {
 /*
    uper walcode mein jab mai time change kiya then tab ye 5 second baad load huwa 
    usko reolve karne ke asynchronous programming aayi hai mujhe ek hi second mein 
-   mein chalana hoga then wehave to use callback function
+   mein chalana hoga then we have to use callback function
 
 
 // This for create data

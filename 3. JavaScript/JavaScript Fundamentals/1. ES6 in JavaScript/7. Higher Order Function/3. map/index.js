@@ -11,3 +11,11 @@ let companies = [
 
 
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+
+
+// map() higher order fucntion
+let result = companies.map(function (company, indexNo) {
+    console.log(`company name is: ${company.name} ${company.category}`);
+})
+
+console.log(result);
