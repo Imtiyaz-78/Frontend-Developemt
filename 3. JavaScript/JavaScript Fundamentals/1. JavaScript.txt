@@ -1,3 +1,4 @@
+
 // https://262.ecma-international.org/#sec-typeof-operator
 <====================> JavaScript-fundamentals <=========================>
 

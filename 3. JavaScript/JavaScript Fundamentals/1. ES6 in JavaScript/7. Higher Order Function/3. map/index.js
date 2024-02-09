@@ -1,3 +1,4 @@
+
 let companies = [
     { name: "Google", category: "Product Based", start: 1981, End: 2004 },
     { name: "Amazon", category: "Product Based", start: 1992, End: 2008 },
