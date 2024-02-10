@@ -57,7 +57,7 @@ let Obj3 = {
 // <================================================>
 
 // Array hai, object, fucntion or method sab kahan se drive ho rahe protoype se
-// sab kya hai use kar rahe object [[Prototpe ]]
+// sab kya use kar rahe hai object [[Prototpe ]]
 
 const array = new Array([]) // first way
 const array2 = new Array() // 2nd way
