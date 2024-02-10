@@ -1,0 +1,10 @@
+
+
+1. What is Prototype in js:
+   when we printing or console object or array or anything then we will
+   get some hidden property or function or method inside this object and 
+   that properties are called Prototype  
+   
+   when we printing, console own properties then javascript engine also give 
+   their own properties and tell us to use it also called [[Prototype]]: object
+   
