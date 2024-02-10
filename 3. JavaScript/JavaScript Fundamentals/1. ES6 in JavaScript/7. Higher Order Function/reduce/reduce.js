@@ -1,5 +1,5 @@
 
-// reduce() method
+// reduce() method don't change in original array 
 
 
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
@@ -22,14 +22,5 @@ console.log(totalAge); // 460
 
 
 // Now more optimize 
-const Sum = ages.reduce((accumulator, currentValue) => accumulator + currentValue , 0 );
+const Sum = ages.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 console.log(Sum); // same result as before: 460
-
-
-
-
-
-
-
-
-console.log(ages);
