@@ -1,0 +1,29 @@
+
+1. Event Bubbling
+2. Event capturing
+3. Stop Propagation
+4. Immediate Propagation
+5. Prevent Default
+
+
+===> What is Event Bubbling in JS:
+     DOM hierarchy propagates or travel from top to bottom (button, div, body head, html)
+
+     Event bubbling is the process by which an event propagates or travel from child element to parent (upward) through its parent elements in the DOM until it reaches the root of the document.
+
+
+    In case of event bubbling, the event movement begins from the target to the outermost element in the file. Event Capturing is performed before event bubbling but capturing is used very rarely because event bubbling is sufficient to handle the event flow.
+
+
+===> What is Event Capturing in JS:
+     Event capturing occurs when a nested element gets clicked. 
+     DOM hierarchy propagates or travel from top to bottom (html, head, body)
+
+     Event Capturing is the process by which an event propagates or travel from parent element to child (backward) through its child elements in the DOM until it reaches the root of the document. 
+
+     where in event capturing, an event moves from the outermost element to the target. Otherwise, in case of event bubbling, the event movement begins from the target to the outermost element in the file. Event Capturing is performed before event bubbling but capturing is used very rarely because event bubbling is sufficient to handle the event flow.
+
+ 
+
+==> Understanding the Event Propagation(v.v.i):
+    Event propagation is a mechanism that defines how events propagate or travel through the DOM tree to arrive at its target and what happens to it afterward.
