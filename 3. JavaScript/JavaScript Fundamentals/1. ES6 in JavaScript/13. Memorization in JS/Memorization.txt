@@ -1,0 +1,14 @@
+
+1. Implementing Memorization in Javascript
+
+==> Memorization in Javascript:
+    Memorization is an optimization technique that can be used to reduce
+    time-consuming calculations by saving previous input to something called
+    cache and returning the result form it.
+
+    Memorization is an optimization is a technique that allows us to store 
+    the results of expensive function calls and retrieve them when the same 
+    inputs occur again. This significantly speeds up programs by avoiding  
+    redundant computations.
+
+    
