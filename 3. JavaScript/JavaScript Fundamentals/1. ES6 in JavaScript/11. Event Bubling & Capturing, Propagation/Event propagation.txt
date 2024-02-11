@@ -9,7 +9,7 @@
 ===> What is Event Bubbling in JS:
      DOM hierarchy propagates or travel from top to bottom (button, div, body head, html)
 
-     Event bubbling is the process by which an event propagates or travel from child element to parent (upward) through its parent elements in the DOM until it reaches the root of the document.
+     Event bubbling is the process by which an event propagates or travel from child element to parent element (upward) through its parent elements in the DOM until it reaches the root of  the document.
 
 
     In case of event bubbling, the event movement begins from the target to the outermost element in the file. Event Capturing is performed before event bubbling but capturing is used very rarely because event bubbling is sufficient to handle the event flow.
