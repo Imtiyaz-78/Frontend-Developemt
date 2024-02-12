@@ -13,14 +13,14 @@ function myDebounce(call, delay) {
         if (timer) {
             clearTimeout(timer);
         } else {
-            setTimeout(() => {
+            timer = setTimeout(() => {
                 call(); // Call the original function after delay
             }, delay);
         }
     }
 }
 
-const debounceFunction = myDebounce(getData, 1000);
+const debounceFunction = myDebounce(getData, 3000);
 
 
 

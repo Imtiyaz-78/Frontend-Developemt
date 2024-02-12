@@ -1,7 +1,6 @@
 
 // Infinite Curring function in javascript
 
-
 function Add(a) {
     return function (b) {
         return function (c) {
@@ -23,7 +22,7 @@ function Add(a) {
 // above function mein agar infinte run karna hoga toh bahut hectik kaam hai so let's below exam..
 
 
-// Infinite Curring function 
+// Infinite Curring function (This is very Good exmaple of Curring Function)
 function Sum(a) {   // 3, 6, 10, 15, 21 
     return function (b) {
         if (b) {
