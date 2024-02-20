@@ -7,7 +7,7 @@ window.addEventListener('keydown', function (e) {
  <table>
   <tr>
     <th >Key</th>
-    <th>Keycode</th>
+    <th>ASCII Code</th>
     <th>Code</th>
   </tr>
   <tr>

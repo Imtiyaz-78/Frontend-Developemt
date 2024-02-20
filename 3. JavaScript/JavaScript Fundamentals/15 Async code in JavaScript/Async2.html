@@ -22,34 +22,37 @@
         heading.style.backgroundColor = "blue";
         heading.style.color = "#f1f1f1";
         console.log("Running start");
-      }
+      };
 
-      const StopedRunning= function () {
+      const StopedRunning = function () {
         const heading = document.querySelector("h1");
         heading.textContent = "This is updated value stoped";
         heading.style.backgroundColor = "salmom";
         heading.style.color = "#f1f1f1";
         console.log("Running Stoped");
-      }
-    
+      };
+
       // setInterval mein 3rd parameter bhi hota hai
-      // const test = setInterval(startRunning,  1000, "imtiyaz"); // ye janne ke liye lik diye hai 
-      const intervalStart = setInterval(startRunning,  3000); 
-      const intervalStop  = setInterval(StopedRunning, 3000); 
-      
-      const startBtn = document.querySelector('#start').addEventListener('click', function(){
-        clearInterval(intervalStart);
-        console.log("Running Start");
-      });
+      // const test = setInterval(startRunning,  1000, "imtiyaz"); // ye janne ke liye lik diye hai
+      const intervalStart = setInterval(startRunning, 3000);
+      const intervalStop = setInterval(StopedRunning, 3000);
 
+      const startBtn = document
+        .querySelector("#start")
+        .addEventListener("click", function () {
+          clearInterval(intervalStart);
+          console.log("Running Start");
+        });
 
-      const stopBtn = document.querySelector('#stop').addEventListener('click', function(){
-        clearInterval(intervalStop);
-        console.log("Running stopped");
-      });
-
-
-
+      const stopBtn = document
+        .querySelector("#stop")
+        .addEventListener("click", function () {
+          clearInterval(intervalStop);
+          console.log("Running stopped");
+        });
     </script>
   </body>
 </html>
+
+
+
