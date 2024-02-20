@@ -1,6 +1,6 @@
 
 // bind() function sam as tis the call() function but only 
-// difference keep copy of function and call or invoking it later 
+// difference keep copy the of function, and call or invoking it later 
 
 
 /* bind JS: what can do with the help of bind, 
@@ -16,7 +16,7 @@ let student1 = {
     name: "Imtiyaz",
     age: 22,
     Designation: "Engineer",
-
+za
 }
 let printDetails = function (state, country) {
     console.log(this.name + " " + state + " " + country);

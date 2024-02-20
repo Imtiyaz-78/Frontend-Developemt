@@ -1,9 +1,9 @@
 
 // What is differenece between map or forEach:
 /*
-   1. 1. Map returns a new array 
+   1.  Map returns a new array 
    2. while forEach return undefined see given example
-   3. reduce method work with map() method  but not with forEach() loop see example 2nd 
+   3. reduce method work with map() method but not work with forEach() loop see EX. 2nd 
 */
 
 let arr = [1, 2, 3, 4, 5, 6];
@@ -32,7 +32,7 @@ let secondExmp = arr.map((items) => {
 console.log(secondExmp); // 91
 
 
-// 2nd example: using map() method:
+// 2nd example: using forEach() method:
 let secondExmpUsingForEach = arr.forEach((items) => {
     return items * items;
 }).reduce((x, y) => {
