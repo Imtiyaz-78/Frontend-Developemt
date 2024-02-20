@@ -1,8 +1,24 @@
 
 
-===> To Create Dummy JSON Data:
+===> To Create Dummy JSON Data(This is best):
      Link --> https://www.mockaroo.com/
+
+
+===> One more alternative  Create Dummy JSON Data:
+     Link --> https://www.jsondataai.com/dashboard/new
+
 
 
 ===> To use Inbuild All UI Material:
      Link --> https://neumorphism.io/#e0e0e0
+
+
+==> Code snippet for social:
+    Link: https://ray.so/
+
+
+==> Top VS Code Extensions:
+    1. indent-rainbow
+    2. soft color
+    3. magic-theme
+    4. 
