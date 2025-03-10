@@ -43,7 +43,7 @@ new Promise(function (success, reject) {
 // 3rd promise example:
 const promiseThree = new Promise(function (success, reject) {
     setTimeout(function () {
-        success({ username: "imtiyaz", email: "imtiyaz@google.com", mob: 9534537544 })
+        success({ username: "imtiyaz", email: "imtiyaz@google.com", mob: 5550000000 })
     }, 1000)
 });
 
